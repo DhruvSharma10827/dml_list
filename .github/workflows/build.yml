@@ -38,13 +38,3 @@ jobs:
       with:
         name: dml-list-apk
         path: build/app/outputs/flutter-apk/app-release.apk
-        
-    - name: Create Release
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: softprops/action-gh-release@v1
-      with:
-        tag_name: v0.1.0-${{ github.run_number }}
-        name: DML List v0.1.0 Build ${{ github.run_number }}
-        files: build/app/outputs/flutter-apk/app-release.apk
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
