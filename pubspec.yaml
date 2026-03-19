@@ -1,0 +1,23 @@
+name: dml_list
+description: "DML List - A minimal and premium todo list application"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.1
+  intl: ^0.19.0
+  uuid: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
